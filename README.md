@@ -111,3 +111,20 @@ Providing Clear Direction for Developers:
 How: Wireframes give developers an early, unambiguous guide for what they will build, allowing them to spot potential technical challenges early.
 
 Figma Example: A developer can open the wireframe file long before the final UI is ready. They can use the developer handoff features to inspect the wireframe, getting the exact dimensions between elements and seeing the interactive flows via the prototype. This early visibility helps them plan their architecture and ask critical questions like, "What data populates this list in the wireframe?"
+
+###### A real-world scenario where wireframing identified potential usability issues before the development phase
+Issue: Confusing Checkout Flow
+
+Identification: During a real-time collaboration session, the product manager noticed that the "Proceed to Payment" button was placed below the fold on the wireframe. The UX designer used the prototyping feature to demonstrate the flow, and the team agreed the user might miss it.
+
+Resolution: The team brainstormed directly in the file. They used the vector tools to quickly mock up a sticky footer that kept the checkout button always visible as the user scrolled. They updated the main Component for the button, which automatically updated it across all relevant screens.
+
+Impact on the Final Product: The final checkout page had a clear, persistent call-to-action. This directly led to a higher conversion rate and reduced user frustration, as the path to purchase was unmistakable. Catching this in the wireframe stage meant the fix took minutes instead of the hours it would have required to recode a fully developed page.
+
+Issue: Inconsistent Information Hierarchy on a Product Card
+
+Identification: A developer, reviewing the wireframe via the developer handoff panel, asked a comment: "Which element has priority for the screen reader: the product name or the discount badge?" This revealed that the visual hierarchy was unclear.
+
+Resolution: The design team revisited the Component for the product card. They rearranged the elements in the wireframe, making the product name the most prominent feature and moving the discount badge to a supporting position. They used Figma's layout grid to ensure proper alignment.
+
+Impact on the Final Product: The final product cards were not only more visually balanced but also more accessible. The consistent structure across all cards made the interface easier to scan for all users and provided a clear, semantic structure for the development team to follow, resulting in cleaner, more robust code.
